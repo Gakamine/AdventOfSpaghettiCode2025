@@ -9,7 +9,7 @@ if len(sys.argv) != 3:
 day = sys.argv[1]
 part = sys.argv[2]
 
-script_path = f"{day}/{day}_{part}.py"
+script_path = f"{day}/{part}.py"
 
 try:
     result = subprocess.run(["python", script_path], cwd="code", capture_output=True, text=True)
