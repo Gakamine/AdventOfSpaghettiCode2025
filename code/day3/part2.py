@@ -1,5 +1,7 @@
+import os
+
 count = 0
-with open('../inputs/day3/day3.txt', 'r') as file:
+with open(os.environ['INPUT_FILE'], 'r') as file:
     for line in file:
         line = line.strip()
         joltage = [0 for x in range(0,12)]

@@ -1,6 +1,8 @@
+import os
+
 dial = 50
 count = 0
-with open('../inputs/day1/day1.txt', 'r') as file:
+with open(os.environ['INPUT_FILE'], 'r') as file:
     for line in file:
         line = line.strip()
         direction = line[0]

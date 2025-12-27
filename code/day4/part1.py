@@ -1,4 +1,6 @@
+import os
+
 count = 0
-with open('../inputs/day4/day4.txt', 'r') as file:
+with open(os.environ['INPUT_FILE'], 'r') as file:
     for line in file:
     print(count)
